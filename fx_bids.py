@@ -269,7 +269,7 @@ def load_bids(dir_bids, subj_id, task, run_id):
     bads = [c for c, s in zip(ch_names, ch_status) if s == 'bad']
     epo.info['bads'] = bads
     epo.baseline = (-0.3, -0.05)  # todo: baseline from bids file
-    return epo
+    return epo, fname_eeg
 
 
 
